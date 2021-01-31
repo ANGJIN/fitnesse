@@ -96,7 +96,7 @@ public class SerializedPageResponderTest {
   }
 
   @Test
-  public void testGetPageHieratchyAsXml() throws Exception {
+  public void testGetPageHierarchyAsXml() throws Exception {
     WikiPageUtil.addPage(root, PathParser.parse("PageOne"), "");
     WikiPageUtil.addPage(root, PathParser.parse("PageOne.ChildOne"), "");
     WikiPageUtil.addPage(root, PathParser.parse("PageTwo"), "");
@@ -114,7 +114,7 @@ public class SerializedPageResponderTest {
   }
 
   @Test
-  public void testGetPageHieratchyAsXmlDoesntContainSymbolicLinks() throws Exception {
+  public void testGetPageHierarchyAsXmlDoesntContainSymbolicLinks() throws Exception {
     WikiPage pageOne = WikiPageUtil.addPage(root, PathParser.parse("PageOne"), "");
     WikiPageUtil.addPage(root, PathParser.parse("PageOne.ChildOne"), "");
     WikiPageUtil.addPage(root, PathParser.parse("PageTwo"), "");
